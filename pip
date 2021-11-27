@@ -1,0 +1,14 @@
+py -m venv venv
+venv\Scripts\activate
+View->Command Palette->Select interpreter pradeti kazka rasyti, ismes Enter interpreter path.. ir ivesti ".\venv\Scripts\python.exe"	//taip bus parinktas interpretatorius projektui ir nenaudos kuris yra kompe suinstaliuotas, parinkus taip pat apacioje, kaireje atsiranda (venv:venv)
+
+pip install django
+django-admin startproject core .
+python manage.py migrate
+
+py manage.py createsuperuser
+a@a.com
+user	admin
+pasw	admin
+
+git init
